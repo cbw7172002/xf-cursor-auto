@@ -8,7 +8,6 @@ Cursor Pro GUI - 基于PyQt5的图形界面程序
 """
 
 import sys
-sys.path.append('d:/CursorPro修改自动登录/github/xf-cursor-auto')
 import os
 import logging
 import platform

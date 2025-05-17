@@ -1,5 +1,4 @@
 import sys
-sys.path.append('d:/CursorPro修改自动登录/github/xf-cursor-auto')
 import os
 import platform
 import json
