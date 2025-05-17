@@ -52,16 +52,7 @@ exe_args = {
 if is_windows:
     # 确保在Windows上以管理员权限运行
     exe_args['uac_admin'] = True
-    exe_args['manifest'] = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
-        <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
-            <security>
-                <requestedPrivileges>
-                    <requestedExecutionLevel level="requireAdministrator" uiAccess="false"/>
-                </requestedPrivileges>
-            </security>
-        </trustInfo>
-    </assembly>'''
+    exe_args['manifest'] = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="requireAdministrator" uiAccess="false"/></requestedPrivileges></security></trustInfo></assembly>'''
     
 # macOS特定参数
 if is_macos:
